@@ -4,8 +4,6 @@
     <list default="true" id="f93ed137-de4a-49ae-bd62-30ca6a8acd66" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/battleship/ocean/Ocean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ocean/Ocean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/battleship/ships/EmptySea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ships/EmptySea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/battleship/ships/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ships/Ship.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570356161898</updated>
-      <workItem from="1570356165283" duration="5660000" />
+      <workItem from="1570356165283" duration="5945000" />
     </task>
     <servers />
   </component>
