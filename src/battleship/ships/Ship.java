@@ -5,7 +5,7 @@ import battleship.ocean.*;
 public abstract class Ship {
     private int bowRow; //-- the row (0 to 9) which contains the bow (front) of the ship.
     private int bowColumn;// -- the column (0 to 9) which contains the bow (front) of the ship.
-    private int length;// -- the number of squares occupied by the ship. An "empty sea" location has length 1.
+    protected int length;// -- the number of squares occupied by the ship. An "empty sea" location has length 1.
     private boolean horizontal;// -- true if the ship occupies a single row, false otherwise.
     boolean [] hit = new boolean[4];// -- an array of booleans telling whether that part of
     // the ship has been hit. Only battleships use all four locations;\
