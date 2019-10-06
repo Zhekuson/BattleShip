@@ -1,4 +1,11 @@
 package battleship.ships;
 
-public class Battleship {
+public class Battleship extends Ship {
+
+    @Override
+    String getShipType(){
+        return "battleship";
+    }
+
+
 }

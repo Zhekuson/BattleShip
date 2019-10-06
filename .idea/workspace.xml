@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f93ed137-de4a-49ae-bd62-30ca6a8acd66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/battleship/main/BattleshipGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/main/BattleshipGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/battleship/main/Ocean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ocean/Ocean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/battleship/ships/Battleship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ships/Battleship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/battleship/ships/Cruiser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ships/Cruiser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/battleship/ships/Destroyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ships/Destroyer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/battleship/ships/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ships/Ship.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570356161898</updated>
-      <workItem from="1570356165283" duration="2111000" />
+      <workItem from="1570356165283" duration="4798000" />
     </task>
     <servers />
   </component>
