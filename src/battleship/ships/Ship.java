@@ -24,7 +24,7 @@ public abstract class Ship {
         return bowColumn;
     }
 
-    boolean isHorizontal(){
+    public boolean isHorizontal(){
         return horizontal;
     }// -- Returns horizontal
     //Setters:
@@ -42,7 +42,7 @@ public abstract class Ship {
         return "ship";
     }
     //Returns the type of this ship. This method exists only to be overridden, so it doesn't much matter what it returns.
-    boolean okToPlaceShipAt(int row, int column, boolean horizontal, Ocean ocean){
+    public boolean okToPlaceShipAt(int row, int column, boolean horizontal, Ocean ocean){
         return false;
     }
     //Returns true if it is okay to put a ship of this length with its bow in this location,
@@ -50,7 +50,7 @@ public abstract class Ship {
     // The ship must not overlap another ship, or touch another ship
     // (vertically, horizontally, or diagonally), and it must not "stick out" beyond the array.
     // Does not actually change either the ship or the Ocean, just says whether it is legal to do so.
-    void placeShipAt(int row, int column, boolean horizontal, Ocean ocean){
+    public void placeShipAt(int row, int column, boolean horizontal, Ocean ocean){
 
     }
 //"Puts" the ship in the ocean. This involves giving values to
@@ -60,14 +60,14 @@ public abstract class Ship {
 // array in the Ocean object. (Note: This will be as many as
 // four identical references; you can't refer to a "part"
 // of a ship, only to the whole ship.)
-    boolean shootAt(int row, int column){
+    public boolean shootAt(int row, int column){
         return false;
     }
   //  If a part of the ship occupies the given row and column,
   //  and the ship hasn't been sunk, mark that part of the ship
   //  as "hit" (in the hit array, 0 indicates the bow) and
   //  return true, otherwise return false.
-    boolean isSunk(){
+    public boolean isSunk(){
         return true;
     }
     //Return true if every part of the ship

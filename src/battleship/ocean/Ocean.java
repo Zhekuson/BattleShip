@@ -21,22 +21,24 @@ public class Ocean {
 
     }
     boolean isOccupied(int row, int column){
-
+        return ships[row][column] instanceof EmptySea;
     }
+    //TODO remake
     boolean shootAt(int row, int column){
-
+        shotsFired++;
+        return ships[row][column].shootAt(row, column);
     }
     int getShotsFired(){
-
+        return shotsFired;
     }
     int getHitCount(){
-
+        return hitCount;
     }
     int getShipsSunk(){
-
+        return shipsSunk;
     }
     boolean isGameOver(){
-
+        
     }
     public Ship[][] getShipArray(){
         return ships;
