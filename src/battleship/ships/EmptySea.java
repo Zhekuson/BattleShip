@@ -6,11 +6,11 @@ public class EmptySea extends Ship {
     }
 
     @Override
-    boolean shootAt(int row, int column){
+    public boolean shootAt(int row, int column){
         return false;
     }
     @Override
-    boolean isSunk(){
+    public boolean isSunk(){
         return false;
     }
 

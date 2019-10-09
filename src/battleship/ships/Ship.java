@@ -51,7 +51,19 @@ public abstract class Ship {
     // (vertically, horizontally, or diagonally), and it must not "stick out" beyond the array.
     // Does not actually change either the ship or the Ocean, just says whether it is legal to do so.
     public void placeShipAt(int row, int column, boolean horizontal, Ocean ocean){
-
+        bowRow = row;
+        bowColumn = column;
+        ocean.getShipArray()[row][column] = this;
+        if(horizontal) {
+            for (int i = 1; i < length; i++){
+                ocean.getShipArray()[row][column+i] = this;
+            }
+        }else
+        {
+            for (int i = 1; i < length; i++){
+                ocean.getShipArray()[row+i][column] = this;
+            }
+        }
     }
 //"Puts" the ship in the ocean. This involves giving values to
 // the bowRow, bowColumn, and horizontal instance variables in
@@ -61,6 +73,9 @@ public abstract class Ship {
 // four identical references; you can't refer to a "part"
 // of a ship, only to the whole ship.)
     public boolean shootAt(int row, int column){
+        if(horizontal){
+             
+        }
         return false;
     }
   //  If a part of the ship occupies the given row and column,
