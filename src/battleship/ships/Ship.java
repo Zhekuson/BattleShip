@@ -74,7 +74,7 @@ public abstract class Ship {
 // of a ship, only to the whole ship.)
     public boolean shootAt(int row, int column){
         if(horizontal){
-             
+
         }
         return false;
     }

@@ -5,10 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/battleship/main/BattleshipGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/main/BattleshipGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/battleship/ocean/Ocean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ocean/Ocean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/battleship/ships/Destroyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ships/Destroyer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/battleship/ships/EmptySea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ships/EmptySea.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/battleship/ships/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ships/Ship.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/battleship/ships/Submarine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ships/Submarine.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +29,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Seminars/Seminar_2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -76,7 +74,8 @@
       <option name="presentableId" value="Default" />
       <updated>1570356161898</updated>
       <workItem from="1570356165283" duration="13391000" />
-      <workItem from="1570559378109" duration="5610000" />
+      <workItem from="1570559378109" duration="7045000" />
+      <workItem from="1570821204638" duration="1715000" />
     </task>
     <servers />
   </component>

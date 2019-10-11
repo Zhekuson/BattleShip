@@ -55,13 +55,13 @@ public class Ocean {
         }
 
     }
-    int getShotsFired(){
+    public int getShotsFired(){
         return shotsFired;
     }
-    int getHitCount(){
+    public int getHitCount(){
         return hitCount;
     }
-    int getShipsSunk(){
+    public int getShipsSunk(){
         return shipsSunk;
     }
     public boolean isGameOver(){

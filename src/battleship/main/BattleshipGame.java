@@ -27,7 +27,7 @@ public class BattleshipGame {
         }while (!ocean.isGameOver());
     }
     public static void printStats(){
-
+        System.out.println("Hit count: " + ocean.getHitCount() + " shots fired: " + ocean.getShotsFired() + "");
     }
     public static void Input(){
 
