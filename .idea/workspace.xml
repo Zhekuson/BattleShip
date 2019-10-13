@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f93ed137-de4a-49ae-bd62-30ca6a8acd66" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/battleship/battleship.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/battleship/battleship.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Battleship/battleship/main/BattleshipGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Battleship/battleship/main/BattleshipGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/battleship/main/BattleshipGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/main/BattleshipGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/battleship/ocean/Ocean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ocean/Ocean.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +95,7 @@
       <workItem from="1570559378109" duration="7045000" />
       <workItem from="1570821204638" duration="2299000" />
       <workItem from="1570823767964" duration="595000" />
-      <workItem from="1570880416074" duration="25989000" />
+      <workItem from="1570880416074" duration="26103000" />
     </task>
     <servers />
   </component>

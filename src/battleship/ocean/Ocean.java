@@ -190,14 +190,14 @@ public class Ocean {
      * @param ship sunked ship
      */
     private void fixSunkShipField(Ship ship){
-        int startRow = ship.getBowRow() > 0 ? ship.getBowRow() - 1: 0;
-        int startColumn = ship.getBowColumn() > 0 ? ship.getBowColumn() - 1: 0;
+        int startRow = ship.getBowRow() > 0 ? ship.getBowRow() - Ocean.PLACEMENTSIZE: 0;
+        int startColumn = ship.getBowColumn() > 0 ? ship.getBowColumn() - Ocean.PLACEMENTSIZE: 0;
 
-        int finishRow = ship.isHorizontal() ? Math.min(ship.getBowRow() + 1, Ocean.FIELDSIZE - 1):
+        int finishRow = ship.isHorizontal() ? Math.min(ship.getBowRow() + Ocean.PLACEMENTSIZE, Ocean.FIELDSIZE - 1):
                 Math.min(ship.getBowRow() + ship.getLength(),  Ocean.FIELDSIZE - 1);
 
         int finishColumn = ship.isHorizontal()? Math.min(ship.getBowColumn() + ship.getLength(), Ocean.FIELDSIZE - 1):
-                Math.min(ship.getBowColumn() + 1, Ocean.FIELDSIZE - 1);
+                Math.min(ship.getBowColumn() + Ocean.PLACEMENTSIZE, Ocean.FIELDSIZE - 1);
 
         //finish row included
         for (int i = startRow; i <= finishRow; i++){
