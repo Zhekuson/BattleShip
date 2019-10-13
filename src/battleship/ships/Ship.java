@@ -139,12 +139,13 @@ public abstract class Ship {
      * @return is ok or not
      */
     private boolean checkPlacement(int row, int column, boolean horizontal,Ocean ocean){
-        int startRow = row > 0 ? row - 1: row;
-        int startColumn = column > 0 ? column - 1: column;
-        int finishRow = horizontal ? Math.min(startRow + Ocean.PLACEMENTSIZE, Ocean.FIELDSIZE - 1):
-                Math.min(startRow + length + 1,  Ocean.FIELDSIZE - 1);
-        int finishColumn = horizontal? Math.min(startColumn + length + 1, Ocean.FIELDSIZE - 1):
-                Math.min(startColumn + Ocean.PLACEMENTSIZE, Ocean.FIELDSIZE - 1);
+        int startRow = row > 0 ? row - Ocean.PLACEMENTSIZE: 0;
+        int startColumn = column > 0 ? column - Ocean.PLACEMENTSIZE: 0;
+
+        int finishRow = horizontal ? Math.min(row + Ocean.PLACEMENTSIZE, Ocean.FIELDSIZE - 1):
+                Math.min(row + length + Ocean.PLACEMENTSIZE,  Ocean.FIELDSIZE - 1);
+        int finishColumn = horizontal? Math.min(column + length + Ocean.PLACEMENTSIZE, Ocean.FIELDSIZE - 1):
+                Math.min(column + Ocean.PLACEMENTSIZE, Ocean.FIELDSIZE - 1);
 
         for (int i = startRow; i <= finishRow; i++){
             for (int j = startColumn; j <= finishColumn; j++){

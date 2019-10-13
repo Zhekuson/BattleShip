@@ -12,7 +12,7 @@ import java.io.Console;
  */
 public class Ocean {
     //some constants
-    public static final int PLACEMENTSIZE = 2;
+    public static final int PLACEMENTSIZE = 1;
     public static final int FIELDSIZE = 10;
     private static final int SHIPCOUNT = 10;
     private static final int CRUISERCOUNT = 2;
@@ -190,13 +190,16 @@ public class Ocean {
      * @param ship sunked ship
      */
     private void fixSunkShipField(Ship ship){
-        int startRow = ship.getBowRow() > 0 ? ship.getBowRow() - 1: ship.getBowRow();
-        int startColumn = ship.getBowColumn() > 0 ? ship.getBowColumn() - 1: ship.getBowColumn();
-        int finishRow = ship.isHorizontal() ? Math.min(startRow + Ocean.PLACEMENTSIZE, Ocean.FIELDSIZE - 1):
-                Math.min(startRow + ship.getLength() + 1,  Ocean.FIELDSIZE - 1);
-        int finishColumn = ship.isHorizontal()? Math.min(startColumn + ship.getLength() + 1, Ocean.FIELDSIZE - 1):
-                Math.min(startColumn + Ocean.PLACEMENTSIZE, Ocean.FIELDSIZE - 1);
+        int startRow = ship.getBowRow() > 0 ? ship.getBowRow() - 1: 0;
+        int startColumn = ship.getBowColumn() > 0 ? ship.getBowColumn() - 1: 0;
 
+        int finishRow = ship.isHorizontal() ? Math.min(ship.getBowRow() + 1, Ocean.FIELDSIZE - 1):
+                Math.min(ship.getBowRow() + ship.getLength(),  Ocean.FIELDSIZE - 1);
+
+        int finishColumn = ship.isHorizontal()? Math.min(ship.getBowColumn() + ship.getLength(), Ocean.FIELDSIZE - 1):
+                Math.min(ship.getBowColumn() + 1, Ocean.FIELDSIZE - 1);
+
+        //finish row included
         for (int i = startRow; i <= finishRow; i++){
             for (int j = startColumn; j <= finishColumn; j++){
                 fieldShoot[i][j] = true;

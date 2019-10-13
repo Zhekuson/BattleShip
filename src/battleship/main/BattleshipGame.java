@@ -68,7 +68,7 @@ public class BattleshipGame {
     public static void play(){
         String cmd;
         do {
-
+            ocean = new Ocean();
             do {
                 ocean.print();
                 inputAndShoot();
@@ -79,7 +79,7 @@ public class BattleshipGame {
             } while (!ocean.isGameOver());
             scriptGameOver();
             cmd = scanner.nextLine();
-        }while (cmd != "no");
+        }while (!cmd.equals("no"));
     }
 
     /**
