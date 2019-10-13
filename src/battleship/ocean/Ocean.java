@@ -173,7 +173,7 @@ public class Ocean {
             if (ships[row][column].isSunk()) {
                 shipsSunk++;
                 messageShipSunk(ships[row][column]);
-
+                fixSunkShipField(ships[row][column]);
             }
             return true;
         }
@@ -183,6 +183,26 @@ public class Ocean {
 
     }
 
+    /**
+     * this method is added for making field around the sunken ship
+     * already checked because of the rules of the game(no ships located near each other)
+     * it makes gameplay very comfortable
+     * @param ship sunked ship
+     */
+    private void fixSunkShipField(Ship ship){
+        int startRow = ship.getBowRow() > 0 ? ship.getBowRow() - 1: ship.getBowRow();
+        int startColumn = ship.getBowColumn() > 0 ? ship.getBowColumn() - 1: ship.getBowColumn();
+        int finishRow = ship.isHorizontal() ? Math.min(startRow + Ocean.PLACEMENTSIZE, Ocean.FIELDSIZE - 1):
+                Math.min(startRow + ship.getLength() + 1,  Ocean.FIELDSIZE - 1);
+        int finishColumn = ship.isHorizontal()? Math.min(startColumn + ship.getLength() + 1, Ocean.FIELDSIZE - 1):
+                Math.min(startColumn + Ocean.PLACEMENTSIZE, Ocean.FIELDSIZE - 1);
+
+        for (int i = startRow; i <= finishRow; i++){
+            for (int j = startColumn; j <= finishColumn; j++){
+                fieldShoot[i][j] = true;
+            }
+        }
+    }
     /**
      * getter for shotsFired
      * @return shotsFired

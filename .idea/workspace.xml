@@ -3,13 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f93ed137-de4a-49ae-bd62-30ca6a8acd66" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Battleship/battleship/main/BattleshipGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Battleship/battleship/main/BattleshipGame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Battleship/battleship/ocean/Ocean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Battleship/battleship/ocean/Ocean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Battleship/battleship/ships/Ship.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Battleship/battleship/ships/Ship.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/battleship/main/BattleshipGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/main/BattleshipGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/battleship/ocean/Ocean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ocean/Ocean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/battleship/ships/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ships/Ship.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/battleship/main/BattleshipGameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/battleship/main/BattleshipGameTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +98,7 @@
       <workItem from="1570559378109" duration="7045000" />
       <workItem from="1570821204638" duration="2299000" />
       <workItem from="1570823767964" duration="595000" />
-      <workItem from="1570880416074" duration="20279000" />
+      <workItem from="1570880416074" duration="22238000" />
     </task>
     <servers />
   </component>
