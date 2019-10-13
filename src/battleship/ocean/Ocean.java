@@ -18,6 +18,7 @@ public class Ocean {
     public Ocean(){
         initializeEmptySea();
         placeAllShipsRandomly();
+
     }
     void initializeEmptySea(){
         for (int i = 0; i < FIELDSIZE; i++) {
@@ -30,16 +31,30 @@ public class Ocean {
     private int randomize(int Min, int Max){
         return (int)(Min + Math.random()*(Max-Min));
     }
-    public void placeAllShipsRandomly(){
+    private Ship[] createShips(){
+        Ship[] allShips = new Ship[SHIPCOUNT];
         Battleship bship = new Battleship();
-        Cruiser[] cruisers = new Cruiser[CRUISERCOUNT];
-        Destroyer[] destroyers = new Destroyer[DESTROYERCOUNT];
-        Submarine[] submarines = new Submarine[SUBMARINECOUNT];
-
-        bship.placeShipAt(0,0,true,this);
-        bship.placeShipAt(0,1,true,this);
+        allShips[0] = bship;
+        int index = 1;
+        for (int i = 0; i < CRUISERCOUNT; i++){
+            allShips[index+i] = new Cruiser();
+            index++;
+        }
+        for (int i = 0; i < DESTROYERCOUNT; i++){
+            allShips[i] = new Destroyer();
+        }
+        for (int i = 0; i < SUBMARINECOUNT; i++){
+            allShips[i] = new Submarine();
+        }
     }
-    public boolean isOccupied(int row, int column){
+    public void placeAllShipsRandomly(){
+
+        Ship[] allShips = createShips();
+        while ()
+
+    }
+    public boolean isOccupied(int row, int column)
+    {
         return ships[row][column] instanceof EmptySea;
     }
     //TODO remake

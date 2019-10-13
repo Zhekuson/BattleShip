@@ -23,15 +23,17 @@ public class BattleshipGame {
             System.out.println("Input integer shooting coordinates [0;9]: x and y");
             int row = scanner.nextInt();
             int column = scanner.nextInt();
+
             ocean.shootAt(row,column);
+            printStats();
         }while (!ocean.isGameOver());
     }
     public static void printStats(){
-        System.out.println("Hit count: " + ocean.getHitCount() + " shots fired: " + ocean.getShotsFired() + "");
+        System.out.println("Hit count: " + ocean.getHitCount() + " shots fired: " + ocean.getShotsFired());
     }
     public static void Input(){
-
 
     }
 
 }
+
