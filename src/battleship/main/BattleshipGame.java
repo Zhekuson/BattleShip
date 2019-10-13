@@ -27,6 +27,7 @@ public class BattleshipGame {
                 " shots - this is your score (lower values are better)");
         System.out.println("Do you want to try again? print \"no\"" +
                 " to exit, press any key to continue:");
+        System.out.println();
     }
 
     /**
@@ -78,7 +79,7 @@ public class BattleshipGame {
                 }
             } while (!ocean.isGameOver());
             scriptGameOver();
-            cmd = scanner.nextLine();
+            cmd = scanner.next();
         }while (!cmd.equals("no"));
     }
 
