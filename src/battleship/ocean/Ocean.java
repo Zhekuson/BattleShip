@@ -1,7 +1,9 @@
 package battleship.ocean;
 
+import battleship.exceptions.WrongCoordsException;
 import battleship.ships.*;
 
+import javax.swing.filechooser.FileNameExtensionFilter;
 import java.io.Console;
 
 public class Ocean {
@@ -26,7 +28,7 @@ public class Ocean {
         for (int i = 0; i < FIELDSIZE; i++) {
             for (int j = 0; j < FIELDSIZE; j++){
                 ships[i][j] = new EmptySea();
-                fieldShoot[i][j] = true;//here face
+                //fieldShoot[i][j];//visibility
             }
         }
     }
@@ -98,17 +100,26 @@ public class Ocean {
 
 
     }
+    public boolean checkCoordinateInsideField(int coord) {
+        return coord >= 0 && coord < FIELDSIZE;
+    }
     public boolean isOccupied(int row, int column)
     {
         return ships[row][column] instanceof EmptySea;
     }
-    //TODO remake
+    public void messageShipSunk(Ship ship){
+        System.out.println();
+        System.out.println("You just sank a "+ship.getShipType());
+    }
     public boolean shootAt(int row, int column){
         shotsFired++;
         fieldShoot[row][column] = true;
         if(ships[row][column].shootAt(row, column)){
             hitCount++;
-            if (ships[row][column].isSunk()) shipsSunk++;
+            if (ships[row][column].isSunk()) {
+                shipsSunk++;
+                messageShipSunk(ships[row][column]);
+            }
             return true;
         }
         else{
@@ -136,7 +147,13 @@ public class Ocean {
      * Prints the ocean
      */
     public void print(){
+        System.out.print("*   ");
         for (int i = 0; i < FIELDSIZE; i++){
+            System.out.print(i+"  ");
+        }
+        System.out.println();
+        for (int i = 0; i < FIELDSIZE; i++){
+            System.out.print(i+"|  ");
             for(int j = 0; j < FIELDSIZE; j++){
                 if(fieldShoot[i][j]) {
                     System.out.print(ships[i][j].toString() + "  ");

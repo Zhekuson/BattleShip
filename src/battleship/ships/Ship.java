@@ -21,6 +21,11 @@ public abstract class Ship {
         return bowColumn;
     }
 
+    Ship(){
+        for (boolean b:hit) {
+            b = false;
+        }
+    }
     public boolean isHorizontal(){
         return horizontal;
     }// -- Returns horizontal
@@ -42,6 +47,7 @@ public abstract class Ship {
         setHorizontal(horizontal);
     }
     public abstract String getShipType();
+
 
     private boolean checkIsInField(int row, int column, boolean horizontal, int fieldsize){
         if(horizontal){
@@ -120,7 +126,7 @@ public abstract class Ship {
   //  return true, otherwise return false.
     public boolean isSunk(){
         for (int i = 0; i < length; i++){
-            if(hit[i]) return false;
+            if(!hit[i]) return false;
         }
         return true;
     }
