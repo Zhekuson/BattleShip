@@ -8,6 +8,12 @@
       <change beforePath="$PROJECT_DIR$/out/production/Battleship/battleship/ships/Ship.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Battleship/battleship/ships/Ship.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/battleship/main/BattleshipGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/main/BattleshipGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/battleship/ocean/Ocean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ocean/Ocean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/battleship/ships/Battleship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ships/Battleship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/battleship/ships/Cruiser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ships/Cruiser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/battleship/ships/Destroyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ships/Destroyer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/battleship/ships/EmptySea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ships/EmptySea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/battleship/ships/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ships/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/battleship/ships/Submarine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ships/Submarine.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +37,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Seminars/Seminar_2" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -79,7 +87,7 @@
       <workItem from="1570559378109" duration="7045000" />
       <workItem from="1570821204638" duration="2299000" />
       <workItem from="1570823767964" duration="595000" />
-      <workItem from="1570880416074" duration="1625000" />
+      <workItem from="1570880416074" duration="12247000" />
     </task>
     <servers />
   </component>
@@ -98,5 +106,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/battleship/main/BattleshipGame.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

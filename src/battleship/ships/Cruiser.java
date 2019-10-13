@@ -1,11 +1,13 @@
 package battleship.ships;
 
 public class Cruiser extends Ship {
-
-
+   public final static String shipType = "cruiser";
+   public Cruiser(){
+       length = 3;
+   }
     @Override
-    String getShipType(){
-        return "cruiser";
+    public String getShipType() {
+        return shipType;
     }
 
 }

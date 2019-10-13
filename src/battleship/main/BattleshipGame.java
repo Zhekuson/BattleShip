@@ -26,6 +26,8 @@ public class BattleshipGame {
 
             ocean.shootAt(row,column);
             printStats();
+           // Cruiser cruiser = new Cruiser();
+          //  System.out.println(cruiser.getShipType());
         }while (!ocean.isGameOver());
     }
     public static void printStats(){

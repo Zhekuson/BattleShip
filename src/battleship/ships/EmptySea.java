@@ -13,9 +13,11 @@ public class EmptySea extends Ship {
     public boolean isSunk(){
         return false;
     }
-
+    public String toString(){
+        return "-";
+    }
     @Override
-    String getShipType(){
+    public String getShipType(){
         return this.toString();
     }
 }
