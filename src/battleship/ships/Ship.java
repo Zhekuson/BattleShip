@@ -7,25 +7,20 @@ public abstract class Ship {
     private int bowColumn;// -- the column (0 to 9) which contains the bow (front) of the ship.
     protected int length;// -- the number of squares occupied by the ship. An "empty sea" location has length 1.
     private boolean horizontal;// -- true if the ship occupies a single row, false otherwise.
-    boolean [] hit = new boolean[4];// -- an array of booleans telling whether that part of
+    private boolean [] hit = new boolean[4];// -- an array of booleans telling whether that part of
     // the ship has been hit. Only battleships use all four locations;\
     // cruisers use the first three; destroyers 2; submarines 1; and "empty sea" either one or none.
 
-    int getLength(){
+    public int getLength(){
         return length;
     }
-    int getBowRow(){
+    public int getBowRow(){
         return bowRow;
     }
-    int getBowColumn() {
+    public int getBowColumn() {
         return bowColumn;
     }
 
-    Ship(){
-        for (boolean b:hit) {
-            b = false;
-        }
-    }
     public boolean isHorizontal(){
         return horizontal;
     }// -- Returns horizontal

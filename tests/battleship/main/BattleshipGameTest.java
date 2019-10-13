@@ -9,9 +9,8 @@ class BattleshipGameTest {
 
     @Test
     void inputAndShoot() {
-        
-    }
 
+    }
     @Test
     void play() {
     }
