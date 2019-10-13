@@ -3,10 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="f93ed137-de4a-49ae-bd62-30ca6a8acd66" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Battleship/battleship/ocean/Ocean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Battleship/battleship/ocean/Ocean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Battleship/battleship/ships/Ship.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Battleship/battleship/ships/Ship.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/battleship/ocean/Ocean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ocean/Ocean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/battleship/ships/Battleship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ships/Battleship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/battleship/ships/Cruiser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ships/Cruiser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/battleship/ships/Destroyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ships/Destroyer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/battleship/ships/EmptySea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ships/EmptySea.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/battleship/ships/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ships/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/battleship/ships/Submarine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/battleship/ships/Submarine.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,10 +40,10 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Seminars/Seminar_2" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Meta-inf/META-INF" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
@@ -98,7 +100,7 @@
       <workItem from="1570559378109" duration="7045000" />
       <workItem from="1570821204638" duration="2299000" />
       <workItem from="1570823767964" duration="595000" />
-      <workItem from="1570880416074" duration="22238000" />
+      <workItem from="1570880416074" duration="23037000" />
     </task>
     <servers />
   </component>

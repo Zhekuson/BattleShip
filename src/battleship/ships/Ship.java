@@ -3,13 +3,20 @@ package battleship.ships;
 import battleship.ocean.*;
 
 public abstract class Ship {
-    private int bowRow; //-- the row (0 to 9) which contains the bow (front) of the ship.
-    private int bowColumn;// -- the column (0 to 9) which contains the bow (front) of the ship.
-    protected int length;// -- the number of squares occupied by the ship. An "empty sea" location has length 1.
-    private boolean horizontal;// -- true if the ship occupies a single row, false otherwise.
-    private boolean [] hit = new boolean[4];// -- an array of booleans telling whether that part of
-    // the ship has been hit. Only battleships use all four locations;\
-    // cruisers use the first three; destroyers 2; submarines 1; and "empty sea" either one or none.
+
+    private int bowRow; //the row (0 to 9) which contains the bow (front) of the ship.
+    private int bowColumn;//the column (0 to 9) which contains the bow (front) of the ship.
+    protected int length;//the number of squares occupied by the ship. An "empty sea" location has length 1.
+    private boolean horizontal;//true if the ship occupies a single row, false otherwise.
+
+    /**
+     * an array of booleans telling whether that part of
+     * the ship has been hit. Only battleships use all four locations;
+     */
+    private boolean [] hit = new boolean[4];
+
+
+
 
     /**
      * getter for length
